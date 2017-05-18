@@ -1,0 +1,6 @@
+/_build
+/db
+/deps
+/*.ez
+/*.sublime-workspace
+erl_crash.dump

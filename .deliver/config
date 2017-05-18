@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+APP="snappic_magento_sandbox"
+
+BUILD_HOST="api.magento-sandbox.snappic.io"
+BUILD_USER="admin"
+BUILD_AT="/tmp/edeliver/$APP/builds"
+
+DELIVER_TO="/home/admin"
+
+STAGING_HOSTS="api.magento-sandbox.snappic.io"
+STAGING_USER="admin"
+
+PRODUCTION_HOSTS=$STAGING__HOSTS
+PRODUCTION_USER=$STAGING__USER
