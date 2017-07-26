@@ -22,6 +22,6 @@ environment :prod do
 end
 
 release :snappic_magento_sandbox do
-  set version: "0.1.0"
+  set version: "0.1.1"
   set applications: [snappic_magento_sandbox: :permanent]
 end

@@ -7,7 +7,8 @@ defmodule SMS.Web.Router do
 
   scope "/", SMS.Web do
     pipe_through :api
-    get "/stores/current", MockupsController, :current_store
-    post "/magento/webhooks", MockupsController, :create_webhook
+    get "/stores/current",            MockupsController, :current_store
+    get "/checkout_trackers/record",  MockupsController, :checkout_trackers_record
+    post "/magento/webhooks",         MockupsController, :create_webhook
   end
 end

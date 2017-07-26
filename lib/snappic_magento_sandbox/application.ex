@@ -8,10 +8,8 @@ defmodule SMS.Application do
 
     # Define workers and child supervisors to be supervised
     children = [
-      # Start the endpoint when the application starts
-      supervisor(SMS.Web.Endpoint, []),
-      # Start your own worker by calling: SMS.Worker.start_link(arg1, arg2, arg3)
-      # worker(SMS.Worker, [arg1, arg2, arg3]),
+      worker(SMS.CheckoutTrackersWorker, []),
+      supervisor(SMS.Web.Endpoint, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

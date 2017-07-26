@@ -20,6 +20,12 @@ defmodule SMS.Web.MockupsView do
     }
   end
 
+  def render("checkout_trackers_record.json", %{result: result}) do
+    %{
+      "result" => result
+    }
+  end
+
   def render("create_webhook.json", _) do
     %{
       "success" => true
